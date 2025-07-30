@@ -1,0 +1,30 @@
+* Cycling Computer
+** Abstract
+Cycling computer able to connect to heart rate monitor and cadence sensor. It will track position and velocity using GPS and IMU sensor fusion. It will display information on a screen and save activities to a .FIT file.
+** Parts
+*** BLE Sensors
+Scan and connect to sensors. Store paired devices in non volatile memory to search for them first.
+**** Set scan window
+**** Restart  scan
+**** Heart Rate
+**** Cadence
+**** Pair Devices
+Figure out how to store in NVM. Maybe use file system if available.
+*** Screen
+*** Position / Velocitty
+**** GPS
+**** IMU
+**** Kalman
+*** Fit Notes
+**** FIT SDK
+Explore Garmin fit sdk
+*** File System
+**** Little FS
+Little FS is a popular file system for the pico
+[[https://github.com/littlefs-project/littlefs][Little FS Git]]
+[[https://github.com/Memotech-Bill/pico-filesystem][Pico reference]]
+
+
+
+
+
