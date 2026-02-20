@@ -1,5 +1,6 @@
 add_executable(${Project}
     main.cpp
+    btHelper.cpp
 )
 
 target_include_directories(${Project} PRIVATE
@@ -11,9 +12,6 @@ target_link_libraries(${Project}
     FreeRTOS-Kernel-Heap4
     pico_stdlib
     pico_btstack_cyw43
-    # pico_cyw43_arch_sys_freertos
-    # pico_btstack_bnep_lwip_sys_freertos
-    # pico_lwip_freertos
     pico_cyw43_arch_lwip_sys_freertos
     pico_btstack_ble
     pico_btstack_classic
